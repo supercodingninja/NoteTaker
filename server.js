@@ -9,12 +9,16 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 
+// EXPRESS STATIC PATH. //
+app.use(express.static('public'));
+
+
 // YOU NEED A WAY TO PARSE THE DATA. //
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 
-// Need some kind of api route. //
+// Configured Routes //
 require('./routes/apiRoute.js')(app);
 require('./routes/htmlRoute')(app);
 
