@@ -17,3 +17,9 @@ app.use(express.urlencoded({extended: true}));
 // Need some kind of api route. //
 require('./routes/apiRoute.js')(app);
 require('./routes/htmlRoute')(app);
+
+
+// START THE SERVER! //
+app.listen(PORT, function() {
+    console.log('Your application is listening on PORT ' + PORT);
+})
