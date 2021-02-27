@@ -10,3 +10,5 @@ const PORT = process.env.PORT || 8080;
 
 
 // Need some kind of api route. //
+require('./routes/apiRoute.js')(app);
+require('./routes/htmlRoute')(app);
