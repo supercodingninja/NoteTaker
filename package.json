@@ -1,0 +1,25 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supercodingninja/NoteTaker.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/supercodingninja/NoteTaker/issues"
+  },
+  "homepage": "https://github.com/supercodingninja/NoteTaker#readme"
+}
