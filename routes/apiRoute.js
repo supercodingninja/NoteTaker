@@ -9,7 +9,9 @@ module.exports = function(app) {
   // GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON. //
   app.get('/api/notes', function(req, res) {
       
-      res.sendFile(path.join(__dirname, '../db/db.json'));
+      // res.sendFile(path.join(__dirname, '../db/db.json'));
+
+      res.json(JSONdata);
     });
 
 
@@ -19,16 +21,17 @@ module.exports = function(app) {
 
     var getNote = req.body;
 
+    getNote.id = Date.now();
+
     JSONdata.push(getNote);
 
-    renderID(JSONdata)
 
       fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(JSONdata, 2, null), (err) => {
         
         if (err) throw err;
-      })
 
-      res.JSON(getNote);
+        res.json(getNote);
+      })
   });
 
 
@@ -38,30 +41,19 @@ module.exports = function(app) {
     
     var deleteID = req.params.id;
 
-    for (var i = 0; i , JSONdata.length; i++) {
+    for (var i = 0; i < JSONdata.length; i++) {
 
-      if (deleteID === JSONdata[i].id) {
+      if (deleteID == JSONdata[i].id) {
 
         JSONdata.splice(i, 1);
       }
     }
 
-    renderID(JSONdata);
-
     fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(JSONdata, 2, null), (err) => {
       
       if (err) throw err;
+
+      res.json(deleteID);
     });
-
-    res.JSON(deleteID);
   });
-};
-
-
-function renderID(arr) {
-
-  for (var i = 0; i < arr.length; i++) {
-
-    arr[i].id = i + 1;
-  }
 };
