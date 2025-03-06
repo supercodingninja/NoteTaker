@@ -1,4 +1,4 @@
-# Note Taker (Express)
+# Note Taker (using express)
 
 ## Description
 
