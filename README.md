@@ -69,4 +69,4 @@ Follow these guidelines for committing:
 * Make a goal to reach 200 commits, so commit early and often!
 
 - - -
-© Frederick Thomas,The Super Coding Ninja&trade;&nbsp; 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© Frederick Thomas,&nbsp;&ldquo;The Super Coding Ninja&trade;&rdquo;&nbsp; 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
