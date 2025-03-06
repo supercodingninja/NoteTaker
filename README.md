@@ -44,7 +44,7 @@ Application should allow users to delete previously saved notes.
 
 ## Deploying the App
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
+You will not be able to deploy your server side code on GitHub pages. This app can be deployed on Heroku, etc. Carefully follow the [Heroku Guide](../04-Important/HerokuGuide.md) for getting your app deployed on Heroku.
 
 - - -
 
@@ -66,15 +66,7 @@ Follow these guidelines for committing:
 
 * Test your application before you commit to ensure functionality at every step in the development process.
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
+* Make a goal to reach 200 commits, so commit early and often!
 
 - - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© Frederick Thomas,The Super Coding Ninja&trade;&nbsp; 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
